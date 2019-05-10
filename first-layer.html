@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tutorial.html">2x2 Tutorial</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1 class="step-h1">First Layer</h1>
+    <div class='step-demonstration-img-div'>
+        <img class='step-demonstration-img' src="./pictures/2x2 first layer - correct.png">
+        <img src="./pictures/2x2 first layer - incorrect.png" class='step-demonstration-img'>
+    </div>
+    <main class='step-main'>
+        <h1 class="text-muted">How to do it:</h1>
+        <ol class="how-to-do-it">
+            <li>We have to find any piece containing white on it.</li>
+            <li>We rotate the whole cube so that white on our piece faces down.</li>
+            <li>We then have to look on the upper layer for another piece containing white (if you can’t find one go to
+                step 9).</li>
+            <li>We check if the piece that we just found has any colors that are the same as on the first piece (apart
+                from
+                white)</li>
+            <li>If it contains the same color (apart from white), we move the piece above its correct place (the place
+                we
+                want to insert it in). E.g. In the example below the red-blue-white (white can’t be seen) piece has to
+                be
+                inserted into the place labelled “Correct place” because both pieces have red:</li>
+            <img class="ul-img" src="./pictures/2x2 correct place.png">
+            <li>We carry out the R U R’ U’ algorithm in the place where we want to insert our element – we have to
+                hold
+                it on our right side (in this case we keep the red face at the front and perform the algorithm on the
+                face
+                where the element’s intended place is) until the edge is inserted and at the same time properly rotated
+                (the red part of our edge has to touch the red face and the white part has to touch the white face):</li>
+            <img class="ul-img" src="./pictures/2x2 correct place1.png">
+            <div class="alg-four-div">
+                <img src="./pictures/R - 2x2.png">
+                <img src="./pictures/U - 2x2.png">
+                <img src="./pictures/R' - 2x2.png">
+                <img src="./pictures/U' - 2x2.png">
+            </div>
+            <li>If it doesn’t contain the same color (in step 5) the correct place of this element is also on the
+                bottom
+                layer but instead of being next to the first piece, it is placed diagonally from it. Then we continue
+                with
+                step 5.</li>
+            <li>After we have our piece inserted into the desired place and correctly rotated, we continue with steps
+                3-7
+                until we have all pieces containing white correctly inserted and therefore the “first layer” completed.</li>
+            <li>If one of our pieces will not be on the upper layer and it will be on the bottom layer (the same on
+                which
+                we build the “first layer”), but rotated incorrectly, we should perform the R U R’ U’ algorithm once –
+                this
+                will pull our element to the top layer. Then we continue with steps 4-8.</li>
+        </ol>
+
+        <div class="next-stage-btn-div">
+            <a href="oll.html" class='next-stage-btn btn btn-primary'>Next stage!</a>
+        </div>
+    </main>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+</html>

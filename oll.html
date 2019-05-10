@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tutorial.html">2x2 Tutorial</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1 class="step-h1"> Last layer orientation</h1>
+    <div class='step-demonstration-img-div'>
+        <img class='step-demonstration-img' src="./pictures/2x2 lbl second layer - correct.png">
+        <img src="./pictures/2x2 lbl second layer - incorrect.png" class='step-demonstration-img'>
+    </div>
+
+    <main class="step-main">
+        <h1 class="text-muted">How to do it</h1>
+        <ol>
+            <li>We still hold the cube so that white faces down.</li>
+            <li>We have to find a corner on the bottom layer (the corner will contain yellow) that isn’t yet correctly
+                rotated.</li>
+            <li>After we find this corner we still keep white at the top and we rotate the cube (or move the bottom
+                layer) so that our corner is on our right side. After that we perform the same algorithm as in stage 1
+                of the 2x2x2 LBL method (first layer). Algorithm: R U R’ U’. We do it until our corner we be rotated
+                correctly.</li>
+            <li>By now our cube looks scrambled but don’t worry about it, it is totally normal and if you will do
+                everything correctly it will get solved.</li>
+            <li>Next we have to find another corner on the bottom layer that isn’t correctly orientated. After we find
+                it we have to move it underneath the place were we rotated our previous corner by rotating the bottom
+                layer. It is very important that we do the algorithm in the same place and just move the corners
+                underneath it, otherwise our cube will get scrambled and we will have to start over again.</li>
+            <li>We continue doing that until all the corners are correctly orientated – THIS GIVES AN ORIENTATED SECOND
+                LAYER!!!</li>
+            <img src="./pictures/last layer orientation - example.png" class="ul-img">
+            <p class="text-muted">In the above example we want to correctly rotate the corner on the bottom layer (containing yellow). To do this we hold the cube so that white is on the top and green faces us (we must have the corner to rotate on our right). We do the R U R’ U’ algorithm twice, after this our corner is correctly rotated.</p>
+            <div class="alg-four-div">
+                <img src="./pictures/R - 2x2.png">
+                <img src="./pictures/U - 2x2.png">
+                <img src="./pictures/R' - 2x2.png">
+                <img src="./pictures/U' - 2x2.png">
+            </div>
+
+            <div class="next-stage-btn-div">
+                <a href="pll.html" class='next-stage-btn btn btn-primary'>Next stage!</a>
+            </div>
+
+        </ol>
+    </main>
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+</html>

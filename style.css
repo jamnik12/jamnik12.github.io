@@ -1,0 +1,94 @@
+#main-jumbotron{
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+#about-cube-div{
+    width: 70%;
+    margin: 0 auto;
+}
+#aboutus{
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+}
+#aboutus h1{
+    margin-bottom: 40px;
+}
+#steps-ol{
+    margin-left: 10%;
+    font-family: 'Montserrat', sans-serif;
+}
+#steps-ol li{
+    margin-top: 40px;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#steps-ol li h1{
+    float: left;
+}
+.cube-picture{
+    width: 150px;
+    cursor: pointer;
+    transition: transform 0.9s;
+}
+.cube-picture:hover{
+    transform: scale(0.9)
+}
+.steps-img-div{
+    width: 200px;
+    height: 160px;
+    float: right;
+    margin-right: 20%;
+}
+.step-h1{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.step-demonstration-img{
+    width: 500px;
+}
+.step-demonstration-img:last-child{
+    margin-left: 100px;
+}
+.step-demonstration-img-div{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.ul-img{
+    margin: 20px auto;
+    display: block;
+    width: 300px;
+}
+.step-main{
+    width: 90%;
+    margin: 0 auto;
+}
+.next-stage-btn-div{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.alg-four-div{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.alg-four-div img{
+    width: 170px;
+    height: 170px;
+}
+#pll-cases{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+#pll-cases img{
+    width: 300px;
+    height: 300px;
+}
